@@ -1,130 +1,402 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>오시는 길 & 가격 정보 | 염창 룸싸롱 상세 매뉴얼</title>
-  <meta name="description" content="정통 룸싸롱의 가치와 신뢰를 바로잡기 위해 인생을 바쳤음. 내가 젊은 시절 비즈니스 접대를 다닐 때, 무성의하고 바가지만 씌우는 악덕 룸싸롱 사장들 때문에 계약을 망치고 회사 돈만 날렸던 뼈아픈 과거가 있다. 그때 내가 결심했음. 진짜 고급스럽고 성공률 100% 보장하...">
-  <link rel="canonical" href="https://t3b06-yc-room-pr.pages.dev/about.html">
-  <meta name="bpaas-design-system" content="swiss-minimal">
-  <meta name="bpaas-design-theme" content="kr-swiss-minimal">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    
-      :root {
-        --bg: #ffffff;
-        --fg: #000000;
-        --accent: #0055ff;
-        --muted: #86868b;
-        --border: #111111;
-      }
-      body { background: var(--bg); color: var(--fg); font-family: 'Pretendard', sans-serif; line-height: 1.6; }
-      header { border-bottom: 2px solid var(--border); padding: 15px 0; }
-      .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
-      .hero { padding: 100px 0; border-bottom: 2px solid var(--border); }
-      .hero h1 { font-size: 3.5rem; font-weight: 900; letter-spacing: -0.05em; text-transform: uppercase; margin-bottom: 20px; }
-      .btn { display: inline-block; padding: 10px 24px; background: var(--border); color: #fff; text-decoration: none; font-weight: 700; text-transform: uppercase; transition: background 0.2s; }
-      .btn:hover { background: var(--accent); }
-      .content-section { padding: 80px 0; border-bottom: 2px solid var(--border); }
-      .card { border: 1px solid #e5e5e5; padding: 30px; margin-bottom: 20px; }
-      .review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 40px; }
-      .review-card { border: 2px solid var(--border); padding: 20px; background: #fff; }
-    
-    table { width: 100%; border-collapse: collapse; margin-top: 24px; border: 1px solid var(--border); }
-    th, td { padding: 12px; border: 1px solid var(--border); text-align: center; }
-    th { background: rgba(0,0,0,0.02); font-weight: bold; }
-    header .container { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 1.5rem; font-weight: 900; text-decoration: none; color: var(--fg); letter-spacing: -0.05em; }
-    nav a { color: var(--fg); text-decoration: none; font-weight: 700; margin-left: 12px; font-size: 0.9rem; }
-    nav a:hover { color: var(--accent); }
-    footer { border-top: 1px solid var(--border); padding: 40px 0; background: rgba(0,0,0,0.01); color: var(--muted); font-size: 0.85rem; }
-    footer .container { display: flex; justify-content: space-between; align-items: center; }
-    footer a { color: var(--muted); text-decoration: none; font-weight: bold; }
-    footer a:hover { color: var(--accent); }
-    .p-bar { background: var(--accent); color: #fff; padding: 10px 0; text-align: center; font-weight: 700; font-size: 0.95rem; }
-    .p-bar a { color: #fff; text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>염창 룸싸롱 가격 | 진짜 정보 · 형님들이 알려주는 모든 것</title>
+    <meta name="description" content="염창 룸싸롱 가격, 시스템, 후기까지 한눈에! 형님들을 위한 진짜 정보. 예약은 010-6279-0862. 염창역 도보 3분, 합리적인 가격에 프리미엄 서비스.">
+    <meta name="keywords" content="염창 룸싸롱, 염창 룸싸롱 가격, 염창룸싸롱, 염창 유흥, 염창 술집, 룸싸롱 추천, 염창 가라오케, 염창 접대">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <link rel="canonical" href="https://t3b06-yc-room-pr.vercel.app/info">
+
+    <!-- OG -->
+    <meta property="og:title" content="염창 룸싸롱 가격 | 진짜 형님들이 간다">
+    <meta property="og:description" content="염창 룸싸롱 가격부터 후기까지 싹 다 공개. 010-6279-0862로 전화 주세요.">
+    <meta property="og:url" content="https://t3b06-yc-room-pr.vercel.app/info">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://t3b06-yc-room-pr.vercel.app/og-image.jpg">
+    <meta property="og:locale" content="ko_KR">
+
+    <style>
+        /* === RESET & BASE === */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            background: #1a1a1a;
+        }
+        body {
+            font-family: 'Noto Sans KR', 'Pretendard', system-ui, -apple-system, sans-serif;
+            background: #0d0d0d;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        a {
+            color: #f2c94c;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ffd966;
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        ul {
+            list-style: none;
+        }
+
+        /* === TYPOGRAPHY === */
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: clamp(2.2rem, 8vw, 4rem);
+            color: #f2c94c;
+            text-shadow: 4px 4px 0 #000;
+        }
+        h2 {
+            font-size: clamp(1.8rem, 5vw, 2.8rem);
+            color: #f2c94c;
+            border-left: 6px solid #f2c94c;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        /* === LAYOUT SYSTEM === */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        /* === NAV === */
+        nav {
+            background: #111;
+            border-bottom: 3px solid #f2c94c;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo a {
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: #f2c94c;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        nav ul li a {
+            font-weight: 600;
+            padding: 0.3rem 0.5rem;
+            border: 2px solid transparent;
+            transition: 0.2s;
+        }
+        nav ul li a:hover {
+            border-color: #f2c94c;
+            color: #fff;
+            text-decoration: none;
+        }
+        .hamburger-menu {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #f2c94c;
+            background: transparent;
+            border: none;
+        }
+
+        /* === TEL LINK (floating) === */
+        .tel-link {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #f2c94c;
+            color: #111;
+            font-weight: 800;
+            font-size: 1.2rem;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(242, 201, 76, 0.5);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+        }
+        .tel-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 30px rgba(242, 201, 76, 0.7);
+            text-decoration: none;
+        }
+        .tel-link::before {
+            content: "📞";
+            font-size: 1.5rem;
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background: #111;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 1rem;
+                border-bottom: 3px solid #f2c94c;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: block;
+            }
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            .tel-link {
+                bottom: 1rem;
+                right: 1rem;
+                font-size: 1rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+        /* === UTILITY === */
+        .section {
+            padding: 4rem 0;
+        }
+        .bg-dark {
+            background: #0d0d0d;
+        }
+        .bg-darker {
+            background: #111;
+        }
+        .card {
+            background: #1a1a1a;
+            border: 2px solid #333;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+        .card:hover {
+            border-color: #f2c94c;
+            transform: translateY(-4px);
+        }
+        .btn {
+            display: inline-block;
+            background: #f2c94c;
+            color: #111;
+            font-weight: 800;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #ffd966;
+            color: #000;
+            text-decoration: none;
+        }
+        .highlight {
+            color: #f2c94c;
+            font-weight: 700;
+        }
+        .faq-item {
+            border-bottom: 1px solid #333;
+            padding: 1.2rem 0;
+        }
+        .faq-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #f2c94c;
+        }
+        .faq-item p {
+            margin-bottom: 0;
+            color: #ccc;
+        }
+        .map-placeholder {
+            background: #222;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #444;
+            color: #888;
+            font-size: 1.2rem;
+        }
+
+        /* === CUSTOM FOR THIS PAGE === */
+        .info-hero {
+            background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+            border-bottom: 4px solid #f2c94c;
+            padding: 5rem 0 3rem;
+        }
+        .info-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+        }
+        .bro-tag {
+            display: inline-block;
+            background: #f2c94c;
+            color: #111;
+            font-weight: 800;
+            padding: 0.2rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
-  <div class="p-bar">🚨 형님들 눈탱이 없는 리얼 정찰제 문의: <a href="tel:010-6279-0862">📞 010-6279-0862</a> (24시간 실시간 대기)</div>
-  <header>
-    <div class="container">
-      <a href="index.html" class="logo">염창.룸싸롱</a>
-      <nav><a href="index.html">홈</a> | <a href="about.html">정보</a></nav>
-    </div>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>오시는 길 &amp; 투명한 가격 안내</h1>
-        <p style="font-size:1.25rem; opacity:0.9;">형이 직접 엄선한 최강의 코스 라인업과 100% 실명 정찰제 가격 테이블</p>
-      </div>
+    <!-- 네비게이션 (전체 페이지 공통) -->
+    <nav>
+        <div class="logo">
+            <a href="/">염창룸싸롱</a>
+        </div>
+        <button class="hamburger-menu" aria-label="메뉴 열기" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
+        <ul>
+            <li><a href="/">홈</a></li>
+            <li><a href="/price">가격</a></li>
+            <li><a href="/info">정보</a></li>
+            <li><a href="/reviews">후기</a></li>
+            <li><a href="/reservation">예약</a></li>
+        </ul>
+    </nav>
+
+    <!-- 히어로 영역 - 정보 페이지 -->
+    <section class="info-hero">
+        <div class="container">
+            <span class="bro-tag">🔥 형님 맞춤 정보</span>
+            <h1>염창 룸싸롱<br>진짜 정보는 여기</h1>
+            <p>가격만 알면 반은 간 거다. 하지만 형님들,<br>
+            시스템·위치·분위기까지 꿰차야 진짜 즐길 수 있다.<br>
+            <strong class="highlight">염창 룸싸롱, 있는 그대로 알려준다.</strong></p>
+            <a href="tel:010-6279-0862" class="btn">📞 지금 전화하기</a>
+        </div>
     </section>
-    
-    <section class="content-section">
-      <div class="container">
-        <div class="card">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">형이 샵을 직접 엄선하고 관리하게 된 리얼 스토리</h2>
-          <p style="font-size:1.1rem; line-height:1.9; margin-bottom:20px;">정통 룸싸롱의 가치와 신뢰를 바로잡기 위해 인생을 바쳤음. 내가 젊은 시절 비즈니스 접대를 다닐 때, 무성의하고 바가지만 씌우는 악덕 룸싸롱 사장들 때문에 계약을 망치고 회사 돈만 날렸던 뼈아픈 과거가 있다. 그때 내가 결심했음. 진짜 고급스럽고 성공률 100% 보장하는 품격 있는 비즈니스 접대 전용 룸싸롱 디렉토리를 만들겠다고. 그렇게 다듬어진 럭셔리 케어 채널이 바로 010-6279-0862 예약센터다.</p>
-        </div>
 
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">100% 투명 정찰제 요금표</h2>
-          <p style="font-size:1.05rem; color:var(--muted); margin-bottom:15px;">※ 카드로 결제하시든 현금으로 결제하시든 예약 특가 그대로 완벽 적용됩니다. 추가요금 요구 시 형이 전액 환불해 줌.</p>
-          
-        <table>
-          <thead>
-            <tr><th>VIP 룸 코스</th><th>시간</th><th>정상가</th><th>예약 특가 (010-6279-0862)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>정통 비즈니스 스탠다드 A</td><td>120분</td><td>350,000원</td><td><strong>300,000원</strong></td></tr>
-            <tr><td>최고급 스페셜 임페리얼 B</td><td>120분</td><td>550,000원</td><td><strong>450,000원</strong></td></tr>
-            <tr><td>VVIP 프레스티지 마스터 C</td><td>180분</td><td>800,000원</td><td><strong>700,000원</strong></td></tr>
-          </tbody>
-        </table>
-      
-          <div style="margin-top:30px; text-align:center;">
-            <a href="tel:010-6279-0862" class="btn">실시간 견적 및 즉시 예약: 📞 010-6279-0862</a>
-          </div>
+    <!-- 상세 정보 섹션 -->
+    <section class="section bg-dark">
+        <div class="container">
+            <h2>🏠 업소 개요</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>위치</h3>
+                    <p>서울 강서구 염창동<br>
+                    <strong>염창역 3번 출구 도보 3분</strong><br>
+                    골목 안쪽이라 조용하고, 발렛 가능.</p>
+                    <p>주소: 서울 강서구 염창동 282-7 (정확한 위치는 전화주세요)</p>
+                </div>
+                <div class="card">
+                    <h3>영업 시간</h3>
+                    <p>매일 <strong>20:00 ~ 새벽 04:00</strong><br>
+                    금·토요일은 새벽 5시까지 자주 연다.<br>
+                    ※ 주말 전화 폭주하니 미리 예약하시는 게 정신건강에 좋습니다.</p>
+                </div>
+                <div class="card">
+                    <h3>시설</h3>
+                    <p>프라이빗 룸 6개 (4인~10인)<br>
+                    최신 사운드 시스템, 무대 조명<br>
+                    금연실·흡연실 구분, 냉난방 완비<br>
+                    남자 화장실 비데 있음 (형님들 이거 은근 중요함)</p>
+                </div>
+                <div class="card">
+                    <h3>주차</h3>
+                    <p>건물 뒤편 전용 주차장 (10대 가능)<br>
+                    만차 시 근처 공영주차장 안내<br>
+                    발렛은 평일 22시 이전만 가능 (형님들 참고)</p>
+                </div>
+            </div>
         </div>
-
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">상세 위치 시그널 및 시설 안내</h2>
-          <p style="font-size:1.1rem; line-height:1.9;">주요 위치 및 시설 안내: 염창 역세권 고급 상업 지구 메인 타워 지하에 은밀하게 위치해 있으며, 전용 지하 주차장에서 매장 엘리베이터로 다이렉트 진입이 가능하여 완벽한 보안과 프라이버시를 보장합니다. 최고급 방음 시스템 완비!</p>
-        </div>
-
-        <div style="margin-top:60px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">단골 고객 추천 실시간 찐소감</h2>
-          <div class="review-grid">
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>송민호</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
-      </div>
-      <p style="font-size:0.9rem; color:var(--muted);">비밀 통로처럼 프라이버시가 완벽하게 보장되는 동선이라 비즈니스 접대에 이만한 곳이 없습니다. 진짜 최고임.</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-22</small>
-    </div>
-  
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>류성열</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
-      </div>
-      <p style="font-size:0.9rem; color:var(--muted);">연남동 룸싸롱 가격 정찰제 투명하게 공개해 주셔서 너무 믿음이 갑니다. 번호 대리님한테도 전달했네요.</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-26</small>
-    </div>
-  </div>
-        </div>
-      </div>
     </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div>&copy; 2026 염창 룸싸롱 스페셜 가이드. All Rights Reserved.</div>
-      <div>
-        <a href="index.html">홈</a> | <a href="about.html">정보</a>
-      </div>
-    </div>
-  </footer>
+
+    <!-- 시스템 & 서비스 -->
+    <section class="section bg-darker">
+        <div class="container">
+            <h2>⚙️ 시스템 & 서비스</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>입장 시스템</h3>
+                    <p>초행이든 단골이든 <strong>예약 필수</strong>.<br>
+                    문 열면 마담이 반갑게 맞아주고 원하는 룸 안내.<br>
+                    첫술에 배부르게 본인이 직접 선택 가능.</p>
+                </div>
+                <div class="card">
+                    <h3>안주 & 주류</h3>
+                    <p>기본 안주: 과일플레이트, 치킨팝콘, 모듬전<br>
+                    추가 주문: 생과일주스, 해물파전, 떡볶이 등<br>
+                    주류: 양주·맥주·소주 기본 세팅, 칵테일 가능</p>
+                </div>
+                <div class="card">
+                    <h3>VIP 프로그램</h3>
+                    <p>자주 오시는 형님들께 VIP 멤버십 자동 적용<br>
+                    생일·기념일 서비스, 시즌 한정 위스키 제공<br>
+                    자세한 건 마담과 쇼부 (전화로 물어보셈)</p>
+                </div>
+            </div>
+            <div style="margin-top:2rem; text-align:center;">
+                <a href="tel:010-6279-0862" class="btn">📞 VIP 문의 전화</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (형님들 궁금증) -->
+    <section class="section bg-dark">
+        <div class="container">
+            <h2>❓ 형님들 자주 묻는 질문</h2>
+            <div class="faq-item">
+                <h4>염창 룸싸롱 가격대가 어떻게 되나요?</h4>
+                <p>기본 패키지부터 프리미엄까지 다양합니다.<br>
+                보통 1인 기준 <strong>10만 원대 중반 ~ 30만 원대</strong> 생각하시면
 </body>
 </html>
